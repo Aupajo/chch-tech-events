@@ -1,1 +1,7 @@
-.env
+# Ignore OS artifacts
+.DS_Store
+Thumbs.db
+
+# Ignore cache files
+/.sass-cache
+/.cache
