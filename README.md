@@ -1,6 +1,6 @@
-# 
+# Christchurch Tech Events Calendar
 
-**** is powered by [Almanack](https://github.com/Aupajo/sinatra-gcal).
+**Christchurch Tech Events** is powered by [Almanack](https://github.com/Aupajo/sinatra-gcal).
 
 Start the server inside your project's directory with:
 
