@@ -41,6 +41,8 @@ Almanack.config do |c|
   meetup_groups.each do |group|
     c.add_meetup_group group_urlname: group, key: meetup_key
   end
+
+  c.add_ical_feed ENV['SHARED_GCAL_URL']
 end
 
 use HTTPCaching
