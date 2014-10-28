@@ -26,6 +26,7 @@ Almanack.config do |c|
     The-Foundation-Christchurch
     WikiHouse-NZ
     Christchurch-Net-User-Group
+    SERVER-User-Group-Christchurch-New-Zealand
     CHC-JS
     Christchurch-Bitcoin-Meetup
     NZPUG-Christchurch
