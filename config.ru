@@ -1,6 +1,6 @@
 require 'almanack/server'
 
-class HTTPCaching
+class CanterburySoftwareCluster
   MAX_AGE_IN_SECONDS = 30 * 60
 
   def initialize(app)
@@ -10,6 +10,7 @@ class HTTPCaching
   def call(env)
     status, headers, response = @app.call(env)
     headers['Cache-Control'] = "max-age=#{MAX_AGE_IN_SECONDS}"
+    headers['Access-Control-Allow-Origin'] = "*"
     [status, headers, response]
   end
 end
@@ -45,5 +46,5 @@ Almanack.config do |c|
   c.add_ical_feed ENV['SHARED_GCAL_URL']
 end
 
-use HTTPCaching
+use CanterburySoftwareCluster
 run Almanack::Server
