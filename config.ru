@@ -38,6 +38,7 @@ Almanack.config do |c|
     Christchurch-Test-Professionals-Network
     Christchurch-Agile-Professionals-Network
     Women-in-IT-Chch
+    Lean-Startup-Christchurch
   )
 
   meetup_groups.each do |group|
