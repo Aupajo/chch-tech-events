@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'almanack'
+gem 'almanack', '~> 1.1.0.beta2'

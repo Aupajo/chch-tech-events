@@ -20,6 +20,10 @@ Almanack.config do |c|
   c.theme = "legacy" # available: legacy
   c.days_lookahead = 30
 
+  # Caching
+  c.cache_responses = true
+  c.cache_expiry = 900 # seconds
+
   meetup_key = ENV['MEETUP_API_KEY'] || raise("MEETUP_API_KEY env var missing")
 
   meetup_groups = %w(
