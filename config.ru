@@ -51,7 +51,7 @@ Almanack.config do |c|
     c.add_meetup_group group_urlname: group, key: meetup_key
   end
 
-  c.add_ical_feed ENV['SHARED_GCAL_URL']
+  c.add_ical_feed ENV['SHARED_GCAL_URL'] || raise("SHARED_GCAL_URL env var missing")
 end
 
 use CanterburySoftwareCluster
